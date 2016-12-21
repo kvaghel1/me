@@ -1,0 +1,86 @@
+html,
+body {
+  height: 100%;
+  background-color: #000;
+  overflow: hidden;
+}
+body {
+  color: #000;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+.inner-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80%;
+    background: none; 
+    margin:auto;
+
+}
+
+@media (min-width: 768px) {
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    height: 400px;
+    background-color: #C2DFFF;
+  }
+}
+
+h1{
+  font-size: 40px;
+  text-shadow: 0 1px 3px rgba(0,0,0,.2);
+  font-family: 'Lato', sans-serif;
+}
+h3{
+    text-shadow: 0 1px 3px rgba(0,0,0,.2);
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin:10px;
+
+}
+
+.inner-cover a img {
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+.inner-cover a:hover img {
+  opacity: .5;
+}
+a {text-decoration: none;}
